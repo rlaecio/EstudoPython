@@ -15,6 +15,18 @@ def testa_primo(valor):
         else:
             print valor, 'e primo'
 
+""" teste de exercicios do python"""
+
+
+def soma_algarismos(n):
+    n = str(n)
+    while len(n) > 1:
+        m = 0
+        for i in n:
+            m = m + int(i)
+        n = str(m)
+    print n
+
 
 def testa_perfeito(gretagarbo):
     verifica = 1
@@ -38,16 +50,6 @@ def procura_divisores(n):
         print 'Divisores de', n, ':'
         for i in lista_de_divisores:
             print i,
-
-def soma_algarismos(n):
-    n = str(n)
-    while len(n) > 1:
-        m = 0
-        for i in n:
-            m = m + int(i)
-        n = str(m)
-    print n
-
 
 n = int(raw_input('Digite o numero a ser analisado: '))
 testa_par(n)
